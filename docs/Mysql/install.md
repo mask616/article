@@ -22,7 +22,7 @@ $ docker pull mysql:latest
 $ docker images
 ```
 
-![image-20210521115349529](../../../../../dev/soft/typora/Typora/assert/image-20210521115349529.png)
+![img](https://gitee.com/mask616/images-bed/raw/master/typora-images/image-20210521115349529.png)
 
 ## 4、运行容器  
 
