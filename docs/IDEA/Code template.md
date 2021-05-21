@@ -2,7 +2,7 @@
 
 ## 1、设置模板
 
-![image-20210521143003372](https://gitee.com/mask616/images-bed/blob/master/typora-images/tmoqwerm.png)
+![img](https://gitee.com/mask616/images-bed/raw/master/typora-images/tmoqwerm.png)
 
 ## 2、模板代码
 
