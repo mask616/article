@@ -59,7 +59,7 @@ $ docker exec -it mysql bash
 mysql -u root -p
 ```
 
-### 6、添加远程登录用户
+## 6、添加远程登录用户
 
 ```shell
 CREATE USER 'user'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
