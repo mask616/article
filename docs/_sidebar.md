@@ -16,3 +16,6 @@
 * IDEA
   * [IDEA类注释模板](/IDEA/Code-template)
 
+* Linux
+  * [阿里云ECS示例挂载数据云盘](/Linux/mount_vdb)
+  * [在CentOS7系统中使用iptables](/Linux/firewall)
