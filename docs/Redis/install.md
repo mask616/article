@@ -12,7 +12,7 @@
 
 ![image-20210525151804580](https://gitee.com/mask616/images-bed/raw/master/typora-images/image-20210525151804580.png)
 
-# 2、使用docker安装Redis
+## 2、使用docker安装Redis
 
 使用如下的命令下载Dokcer镜像:
 
@@ -35,10 +35,10 @@ $ sudo docker pull redis:5.0
 修改redis.conf配置文件：
 主要配置的如下：
 
-> bind 127.0.0.1 #注释掉这部分，使redis可以外部访问
-> daemonize no#用守护线程的方式启动
-> requirepass 你的密码#给redis设置密码
-> appendonly yes#redis持久化　　默认是no
+> bind 127.0.0.1 #注释掉这部分，使redis可以外部访问<br>
+> daemonize no#用守护线程的方式启动<br>
+> requirepass 你的密码#给redis设置密码<br>
+> appendonly yes#redis持久化　　默认是no<br>
 > tcp-keepalive 300 #防止出现远程主机强迫关闭了一个现有的连接的错误 默认是300
 
 **一定要仔细检查上边的配置是否配置正确了， 笔者这里就是bind这个地方没有配置对， 搞了好久。**
@@ -65,12 +65,12 @@ $ sudo docker pull redis:5.0
 
 参数解释：
 
-> -p 6379:6379:把容器内的6379端口映射到宿主机6379端口
-> -v /data/redis/redis.conf:/etc/redis/redis.conf：把宿主机配置好的redis.conf放到容器内的这个位置中
-> -v /data/redis/data:/data：把redis持久化的数据在宿主机内显示，做数据备份
-> redis-server /etc/redis/redis.conf：这个是关键配置，让redis不是无配置启动，而是按照这个redis.conf的配置启动
-> –appendonly yes：redis启动后数据持久化
-> -privileged：使用该参数，container内的root拥有真正的root权限。否则，container内的root只是外部的一个普通用户权限。
+> -p 6379:6379 : 把容器内的6379端口映射到宿主机6379端口<br>
+> -v /data/redis/redis.conf:/etc/redis/redis.conf：把宿主机配置好的redis.conf放到容器内的这个位置中<br>
+> -v /data/redis/data:/data：把redis持久化的数据在宿主机内显示，做数据备份<br>
+> redis-server /etc/redis/redis.conf：这个是关键配置，让redis不是无配置启动，而是按照这个redis.conf的配置启动<br>
+> –appendonly yes：redis启动后数据持久化<br>
+> -privileged：使用该参数，container内的root拥有真正的root权限。否则，container内的root只是外部的一个普通用户权限。<br>
 
 ## 7、验证
 

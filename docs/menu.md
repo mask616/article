@@ -17,6 +17,12 @@
 * Mysql
   * [使用Docker安装Mysql](/Mysql/install.md)
 
+* RocketMQ
+  *  [使用Docker安装RocketMQ](/RocketMQ/install)
+
+* Redis
+  * [使用Docker安装Redis](/Redis/install)
+
 * IDEA
   * [IDEA类注释模板](/IDEA/Code-template)
 
