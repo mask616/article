@@ -17,7 +17,7 @@
 使用如下的命令下载Dokcer镜像:
 
 ```shell
-$ sudo docker pull redis:5.0
+$ sudo docker pull redis
 ```
 
 下载好以后使用docker images查看镜像是否已经下载好，如下图所示我们已经成功下载了镜像:
@@ -38,7 +38,6 @@ $ sudo docker pull redis:5.0
 > bind 127.0.0.1 #注释掉这部分，使redis可以外部访问<br>
 > daemonize no#用守护线程的方式启动<br>
 > requirepass 你的密码#给redis设置密码<br>
-> appendonly yes#redis持久化　　默认是no<br>
 > tcp-keepalive 300 #防止出现远程主机强迫关闭了一个现有的连接的错误 默认是300
 
 **一定要仔细检查上边的配置是否配置正确了， 笔者这里就是bind这个地方没有配置对， 搞了好久。**
@@ -54,13 +53,13 @@ $ sudo docker pull redis:5.0
 **请读者注意， -v参数要修改成你自己存放配置文件和Redis数据的路径。Docker容器内的路径可以不用修改。**
 
 ```shell
- sudo docker run -p 6379:6379 \
- --name redis-5.0 \
+docker run -p 6379:6379 \
+ --name redis-1.0 \
  --privileged=true \
- -v /server/docker/images/redis/config/redis.conf:/etc/redis/redis.conf  \
- -v /server/docker/images/redis/data:/data \
- -d redis:5.0 redis-server /etc/redis/redis.conf \
- --appendonly yes 
+ -v /server/docker/redis/config/redis.conf:/etc/redis/redis.conf  \
+ -v /server/docker/redis/data:/data \
+ -d redis redis-server /etc/redis/redis.conf \
+ --appendonly yes
 ```
 
 参数解释：
