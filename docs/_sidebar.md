@@ -20,8 +20,17 @@
   * [使用Docker安装Redis](/Redis/install)
 
 * IDEA
-  * [IDEA类注释模板](/IDEA/Code-template)
+  * [IDEA类注释模板](/IDEA/code-template)
+  * [IDEA插件](/IDEA/idea-plugin)
+
 
 * Linux
   * [阿里云ECS示例挂载数据云盘](/Linux/mount_vdb)
   * [在CentOS7系统中使用iptables](/Linux/firewall)
+  * [非阿里云挂载磁盘](/Linux/mount_noaliyun)
+  * [Linux挂载2T以上的磁盘](/Linux/Linux挂载2T以上的磁盘)
+
+
+* JAVA
+  * [Linux安装JDK](/java/JDK_install)
+
