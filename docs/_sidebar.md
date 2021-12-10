@@ -29,7 +29,8 @@
   * [在CentOS7系统中使用iptables](/Linux/firewall)
   * [非阿里云挂载磁盘](/Linux/mount_noaliyun)
   * [Linux挂载2T以上的磁盘](/Linux/Linux挂载2T以上的磁盘)
-
+  * [CentOS配置别名免密登录服务器](/Linux/centos_login_with_alis)
+  * [修改阿里云服务器实例名](/Linux/aliyun_modify_hostname)
 
 * JAVA
   * [Linux安装JDK](/java/JDK_install)
