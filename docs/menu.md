@@ -38,6 +38,7 @@
   * [Linux挂载2T以上的磁盘](/Linux/Linux挂载2T以上的磁盘)
   * [CentOS配置别名免密登录服务器](/Linux/centos_login_with_alis)
   * [修改阿里云服务器实例名](/Linux/aliyun_modify_hostname)
+  * [Linux文件迁移](/Linux/Linux下迁移文件)
 
 
 * JAVA
