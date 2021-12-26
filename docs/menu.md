@@ -42,4 +42,4 @@
 
 
 * JAVA
-  * [Linux安装JDK](/java/JDK_install)
+  * [Linux安装JDK](/Java/JDK_install)

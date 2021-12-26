@@ -34,5 +34,5 @@
   * [Linux文件迁移](/Linux/Linux下迁移文件)
   
 * JAVA
-  * [Linux安装JDK](/java/JDK_install)
+  * [Linux安装JDK](/Java/JDK_install)
 
